@@ -53,11 +53,12 @@
    :path_subs nil
    :client_on_load true
 
-   :filetypes [:clojure :fennel :janet :hy :julia :racket :scheme :lua :lisp :python :rust]
+   :filetypes [:clojure :fennel :janet :hy :julia :racket :scheme :lua :lisp :python :rust :shen]
    :filetype {:clojure :conjure.client.clojure.nrepl
               :fennel :conjure.client.fennel.aniseed
               :janet :conjure.client.janet.netrepl
               :hy :conjure.client.hy.stdio
+              :shen :conjure.client.shen.stdio
               :julia :conjure.client.julia.stdio
               :racket :conjure.client.racket.stdio
               :scheme :conjure.client.scheme.stdio
@@ -66,7 +67,8 @@
               :python :conjure.client.python.stdio
               :rust :conjure.client.rust.evcxr}
    :filetype_suffixes {:racket [:rkt]
-                       :scheme [:scm]}
+                       :scheme [:scm]
+                       :shen [:shen]}
 
    :eval
    {:result_register "c"
